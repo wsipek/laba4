@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html lang="uk"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Аніме Світ</title> 
+    <style> 
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        } 
+        body { 
+            font-family: 'Arial', sans-serif; 
+            background-color: #000000;  
+            color: #52fcff;  
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            min-height: 100vh; 
+        } 
+        .header { 
+            width: 100%; 
+            text-align: center; 
+            padding: 20px; 
+            background: linear-gradient(180deg, #000000 50%, transparent); 
+            position: relative; 
+        } 
+        .logo { 
+            width: 120px; 
+            height: auto; 
+        } 
+        .header h1 { 
+            font-size: 3em; 
+            color: #52fcff;  
+            text-shadow: 0 0 10px #52fcff;  
+            letter-spacing: 5px; 
+            text-transform: uppercase; 
+            margin-top: 10px; 
+        } 
+        .content { 
+            width: 90%; 
+            max-width: 1200px; 
+            margin: 20px 0; 
+            padding: 20px; 
+            background-color: #1a1a1a;  
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+        } 
+        .section-title, .banner h2, .banner p { 
+            color: #52fcff;  
+            text-shadow: 0 0 10px #52fcff;  
+        } 
+        .banner { 
+            text-align: center; 
+            margin-bottom: 20px; 
+        } 
+        .image-gallery { 
+            display: flex; 
+            justify-content: space-around; 
+            margin-top: 20px; 
+        } 
+        .image-gallery img { 
+            width: 30%; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+        } 
+        .video-section { 
+            width: 90%; 
+            max-width: 1200px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            margin-top: 40px; 
+        } 
+        .video-section iframe { 
+            width: 100%; 
+            max-width: 800px; 
+            height: 400px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+        } 
+        .song-section { 
+            width: 90%; 
+            max-width: 1200px; 
+            margin-top: 40px; 
+            text-align: center; 
+        } 
+        .song-list { 
+            color: #52fcff; 
+            font-size: 1.2em; 
+            text-shadow: 0 0 10px #52fcff; 
+            list-style-type: none;
+            padding: 0;
+        } 
+        .song-list li { 
+            margin-bottom: 15px; 
+        } 
+        .footer { 
+            background-color: #000000; 
+            color: #52fcff;  
+            width: 100%; 
+            text-align: center; 
+            padding: 10px; 
+            margin-top: 20px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header class="header"> 
+        <video class="logo" autoplay muted loop> 
+            <source src="2.webp" type="video/webm"> 
+            Ваш браузер не підтримує відео. 
+        </video> 
+        <h1>Аніме Світ</h1> 
+    </header> 
+    <main class="content"> 
+        <section class="banner"> 
+            <h2>Ласкаво просимо у світ аніме!</h2> 
+        </section>
+        <section class="image-gallery"> 
+            <img src="1.png" alt="1"> 
+            <img src="2.png" alt="2"> 
+            <img src="3.png" alt="3"> 
+        </section> 
+        <section class="video-section"> 
+            <h2>Watch video</h2> 
+            <iframe src="https://www.youtube.com/embed/3vgJIkZUZZk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            <iframe src="https://www.youtube.com/embed/oYEWA4R6hQM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </section> 
+        <section class="song-section"> 
+            <h2>Пісні</h2> 
+            <ul class="song-list"> 
+                <li>
+                    <audio controls>
+                        <source src="1.mp3" type="audio/mp3">
+                        Ваш браузер не поддерживает аудиофайлы.
+                    </audio>
+                </li> 
+                <li>
+                    <audio controls>
+                        <source src="2.mp3" type="audio/mp3">
+                        Ваш браузер не поддерживает аудиофайлы.
+                    </audio>
+                </li> 
+                <li>
+                    <audio controls>
+                        <source src="3.mp3" type="audio/mp3">
+                        Ваш браузер не поддерживает аудиофайлы.
+                    </audio>
+                </li> 
+                <li>
+                    <audio controls>
+                        <source src="4.mp3" type="audio/mp3">
+                        Ваш браузер не поддерживает аудиофайлы.
+                    </audio>
+                </li> 
+                <li>
+                    <audio controls>
+                        <source src="5.mp3" type="audio/mp3">
+                        Ваш браузер не поддерживает аудиофайлы.
+                    </audio>
+                </li> 
+            </ul> 
+        </section> 
+    </main> 
+
+    <footer class="footer"> 
+        <p>&copy; 2024 Аніме Світ</p> 
+    </footer> 
+
+</body> 
+</html>
